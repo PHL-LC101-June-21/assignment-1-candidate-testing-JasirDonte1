@@ -46,13 +46,9 @@ function gradeQuiz(candidateAnswers) {
     }
   }
 
-  let grade = score / questionsCount;
+  let grade = 100*(score / questionsCount);
 
-  if(grade >= .80){
-    console.log("score: " + score + "/" + questionsCount + "  (", grade*100, "%) You Passed!");
-  }else{
-    console.log("score: " + score + "/" + questionsCount + "  (", grade*100, "%) You Failed!");
-  }
+  console.log("score: " + score + "/" + questionsCount + "  (", grade, "%)");
 
   return grade;
 }
