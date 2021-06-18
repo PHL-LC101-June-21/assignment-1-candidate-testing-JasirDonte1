@@ -39,8 +39,10 @@ function gradeQuiz(candidateAnswers) {
     console.log("Correct!");
     score++;
   } */
-  for (i = 0; i < questions.length; i++){
-    if(candidateAnswers[i] === correctAnswers[i]){
+  for (i = 0; i < questions.length; i++)
+  {
+    if(candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase())
+    {
       score++;
     }
   }
